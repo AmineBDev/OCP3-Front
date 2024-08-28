@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/login.css">
+    <script src="javascript/log.js" defer></script>
+    <script src="javascript/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#portfolio">projets</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+                <li><a id="liLogin">login</a></li>
+                <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="login-container">
+        <h3>Log In</h3>
+        <form action="">
+            <div class="email-container">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" autocomplete="off">
+                <span id="spanEmail">Format de l'email incorrect</span>
+            </div>
+            <div class="password-container">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" autocomplete="off">
+                <span id="spanPassword"></span>
+            </div>
+            <span id="spanEmailPassword"></span>
+
+            <input type="submit" value="Se connecter">
+        </form>
+        <span id="forgetPassword">Mot de passe oublié</span>
+    </section>
+    <footer id="footer-login">
+        <nav>
+            <ul>
+                <li>Mentions Légales</li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* LOGIN */
+
+.login-container h3 {
+	color: #1D6154;
+	font-size: 30px;
+	font-family: 'Syne';
+	text-align: center;
+	margin: 100px 0 50px;
+}
+
+.login-container {
+	width: 30%;
+	min-width: 300px;
+	margin: auto;
+}
+.login-container form div {
+	margin: 0.5em 0 2em 0;
+}
+
+.login-container input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	width: 100%;
+	margin: 0.5em 0;
+}
+
+.login-container input[type="submit"]{
+	display: block;
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 0.5em auto 2em;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+.login-container label {
+	margin: 2em 0 1em 0;
+}
+
+#spanEmail {
+	display: none;
+	color: red;
+}
+
+#spanPassword, #spanEmailPassword {
+	color: red;
+}
+
+#forgetPassword {
+	text-align: center;
+	display: block;
+	text-decoration: underline;
+	cursor: pointer;
+	color: black;
+}
+
+#footer-login {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+}
+
