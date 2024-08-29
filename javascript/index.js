@@ -6,7 +6,7 @@ let filtersData = [];
 
 // RECUPERER PROJETS DEPUIS L'API
 async function fetchProjects() {
-  await fetch("http://localhost:5678/api/works")
+  await fetch("https://ocp3-back.onrender.com/api/works")
     .then((res) => res.json())
     .then((data) => (projectsData = data));
 
@@ -49,7 +49,7 @@ window.addEventListener("load", () => {
 
 // RECUPERER CATEGORIES DEPUIS L'API
 async function fetchFilter() {
-  await fetch("http://localhost:5678/api/categories")
+  await fetch("https://ocp3-back.onrender.com/api/categories")
     .then((res) => res.json())
     .then((data) => (filtersData = data));
 
@@ -178,7 +178,7 @@ function projectsModales() {
 }
 
 function deleteProject(projectId) {
-  fetch("http://localhost:5678/api/works/" + projectId, {
+  fetch("https://ocp3-back.onrender.com/api/works/" + projectId, {
     method: "DELETE",
     headers: { Authorization: `Bearer ${token}` },
   }).then((response) => {
@@ -271,7 +271,7 @@ async function AddNewProject(e) {
     formData.append("image", photo);
 
     try {
-      const response = await fetch("http://localhost:5678/api/works", {
+      const response = await fetch("https://ocp3-back.onrender.com/api/works", {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
         body: formData,

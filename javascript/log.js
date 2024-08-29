@@ -64,7 +64,7 @@ async function login(user) {
     spanEmailPassword.textContent =
       "Le format de l'email et/ou du mot de passe est incorrect";
   } else {
-    await fetch("http://localhost:5678/api/users/login", {
+    await fetch("https://ocp3-back.onrender.com/api/users/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
