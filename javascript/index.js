@@ -6,13 +6,18 @@ let filtersData = [];
 
 // RECUPERER PROJETS DEPUIS L'API
 async function fetchProjects() {
+  // Afficher le message de chargement
+  loadingMessage.style.display = "block";
+
   await fetch("https://ocp3-back.onrender.com/api/works")
     .then((res) => res.json())
-    .then((data) => (projectsData = data));
-
-  console.log(projectsData);
-  projectsDisplay("0");
-  projectsModales();
+    .then((data) => {
+      projectsData = data;
+      // Masquer le message de chargement après la récupération des données
+      loadingMessage.style.display = "none";
+      projectsDisplay("0");
+      projectsModales();
+    });
 }
 
 // AFFICHER LES PROJETS
